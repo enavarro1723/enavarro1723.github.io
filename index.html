@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Mi Web - Emanuel Navarro</title>
     <!-- Required meta tags -->
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/lengauge.js"></script>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -22,23 +23,32 @@
             <!-- <p class="logo col-lg-3">Emanuel Navarro</p> -->
           <nav class="col-md-12 col-lg-12">
             <a href="#milogo" class="loguito col-md-4">Emanuel Navarro</a>
-            <a href="#aboutme" class="col-md-2">Sobre mi</a>
-            <a href="#academico" class="col-md-2">Formación</a>
-            <a href="#experiencia" class="col-md-2">Experiencia</a>
-            <a href="#intereses" class="col-md-2">Intereses</a>
+            <a href="#aboutme" class="col-md-2 lang" key="about">Sobre mi</a>
+            <a href="#academico" class="col-md-2 lang" key="education">Formación</a>
+            <a href="#experiencia" class="col-md-2 lang" key="experience">Experiencia</a>
+            <a href="#intereses" class="col-md- lang" key="interests">Intereses</a>
+
             
           </nav>
         </header>  
       </div>
+      <div class="row">
 
+        <button class="translate col-6" id="EN" >EN</button>
+        <button class="translate col-6" id="ES" >ES</button>
+     
+      </div>
       <div class="row">
         <section class="col-md-12 col-lg-6" id="milogo">
-          <div class="box">
-            <div class="content">              
-              <img src="./imagenes/Ema1.2.jpg">
-              <h2>Emanuel Navarro<br><span>Tecnólogo en Telecomunicaciones</span></h2>
+          <div class="d-flex justify-content-center">
+       
+            <div class="box">
+              <div class="content">              
+                <img src="./imagenes/Ema1.2.jpg">
+                <h2>Emanuel Navarro<br><span>Tecnólogo en Telecomunicaciones</span></h2>
+              </div>
             </div>
-          </div>    
+          </div>     
         </section>
         <section class="col-md-12 col-lg-6" id="aboutme">
           <h2>#<span class='color-acento'> Sobre mi</span> #</h2></br>
@@ -61,14 +71,22 @@
         <section class="col-md-12 col-lg-6" id="experiencia">
           <div class="row">              
             <div class="col-md-12 col-lg-11">
-              <h2>#<span class='color-acento'> Experiencia</span> #</h2></br>
+              <h2>#<span class='color-acento lang' key='experience'> Experiencia </span> #</h2></br>
               <a href="https://prometeoapi.com/"><h5>Prometeo Openbanking - Application Support Engineer Junior</h5></a>
-              <h6>Tiempo en la empresa - 6 Meses</h6>
+              <h6>Tiempo en la empresa - 8 Meses</h6>
               <p>
                 En Prometeo brindo soporte tanto a clientes como al personal de la empresa ya sea con la integración de las APIs como ayudar con en el correcto funcionamiento de distintas herramientas.
               </p>
               <p>
                 Dentro de Prometeo también ayudo en la parte operativa, haciendo de nexo entre distintas áreas mejorando la comunicación entre las mismas, generando documentaciones de procesos y monitrear el correcto funcionamiento de los servicios brindados.
+
+              </p>
+              <a href="https://prometeoapi.com/"><h5>Prometeo Openbanking - Monitoring Analyst Ssr</h5></a>
+              <h6>Tiempo en la empresa - 4 Meses</h6>
+              <p>
+                Actualmente estoy desempeñando el Rol de Monitoring Analyst en Prometeo, gestionando los diferentes softwares de monitoreo y creando las alertas correspondientes de los servicios brindandos por la empresa. </p>
+              <p>
+                Ademas realizo Scripts integrados a herramientas como Slack, Zabbix, Datadog, Gmail, entre otras para automatizar diferentes tareas y optimizar los tiempos de respuesta por parte del equipo al obtener la información necesaria de forma rapida.             
 
               </p>
               <h5>Geocom - Tester Junior</h5>
@@ -94,7 +112,7 @@
               </div>
 
               <div class="col-md-12 col-lg-11">
-                <h2>#<span class='color-acento'> Formación Academica</span> #</h2></br>
+                <h2>#<span class='color-acento lang' key='education'> Formación</span> #</h2></br>
                 <a href="https://www.cure.edu.uy/ensenanza/oferta-educativa/tecnologo-en-telecomunicaciones/"><h5>Tecnólogo en Telecomunicaciones - CURE</h5></a>
                 
                 <h6>Completo: 2018 - 2021</h6>
@@ -109,6 +127,8 @@
                 <h5>Cursos:</h5>
                 <a href="https://www.udemy.com/certificate/UC-ff4f59a2-e0d9-4dad-ac1e-657d179a65bb/"><p>Datadog: Performance monitoring tool (from Zero to Hero)</p></a>
                 <a href="https://www.udemy.com/certificate/UC-15d3ef29-dde5-4e8f-807c-9831a22dc014/"><p>Universidad HTML - Aprende HTML desde Cero hasta Experto</p></a>
+                <a href="/downloads/Curso de Docker.pdf"><p>Curso de Docker</p></a>
+                <a href="/downloads/Curso de Git.pdf"><p>Curso Profesional de Git</p></a>
 
 
               </div>
@@ -120,7 +140,7 @@
       <div class="row">
 
         <section class="col-md-12 col-lg-12" id="intereses">
-            <h2> #<span class='color-acento'> Intereses</span> #</h2>
+            <h2> #<span class='color-acento lang' key='interests'> Intereses</span> #</h2>
           
             <div class="iconos">
 

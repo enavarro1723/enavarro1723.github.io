@@ -601,6 +601,76 @@ a {
 
 /* ¡Pantallas medianas! */
 @media (min-width: 575px) and (max-width: 993px) {
+    .container {
+        width: 100%;
+    }
+    .container ul::after {
+        left:0px;
+        
+    }
+    .container ul li {
+        width: 80%;
+        float: none;
+        clear: none;
+        margin-bottom: 80px;
+
+    }
+    .container ul li .circle {
+        left: -40px;
+        transform: translate(-50%, -50%);
+        float: left;
+
+        
+    }
+  
+    .container ul li:nth-child(odd) {
+        transform: translateX(0px);
+        text-align: left;
+     
+    }
+    .container ul li:nth-child(even) {
+        transform: translateX(0px);
+        float: left;
+        text-align: left;
+
+    }
+    ul li:nth-child(odd) .date {
+        left: 30px;
+    }
+    .main .head {
+        font-size: em;
+    }
+    .box {
+        width: 350px;
+        height: 350px;
+    }
+   
+
+
+    
+    ul li p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+    }
+    
+    .container ul li {
+        padding: 15px 20px;
+   
+    }
+ 
+    
+    ul li .heading {
+        font-size: 1.4rem;
+
+        
+    }
+    ul li .date {
+        width: 130px;
+        height: 33px;
+        top: -45px;
+        font-size: 13px;
+    }
     .language-buttons {
         display: block;
     }
@@ -609,6 +679,7 @@ a {
         
         height:700px;
     }
+ 
     
 }
 

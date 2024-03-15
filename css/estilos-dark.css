@@ -22,8 +22,6 @@ body {
 }
 .p{
     color:var(--color-text1);
-
-
 }
 /* Estilos del Navbar */
 .navbar {
@@ -345,7 +343,7 @@ ul li .heading {
 
 ul li p {
     font-size: 1.5rem;
-    color: #666;
+    color: var(--color-text1);
     line-height: 2rem;
     margin: 6px 0 4px 0;
 }

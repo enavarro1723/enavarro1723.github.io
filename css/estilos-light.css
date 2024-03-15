@@ -23,8 +23,6 @@ body {
 }
 .p{
     color:var(--color-text1);
-
-
 }
 /* Estilos del Navbar */
 .navbar {
@@ -346,7 +344,7 @@ ul li .heading {
 
 ul li p {
     font-size: 1.5rem;
-    color: #666;
+    color: var(--color-text1);
     line-height: 2rem;
     margin: 6px 0 4px 0;
 }
@@ -375,13 +373,6 @@ ul li a  {
     transition: all .4s ease-in-out;
 }
 
-#modeIcon{
-    color:var(--color-title1);
-    background-color: #FFFFFF;
-
-
-
-}
 .card {
     border: 1px solid var(--color-title1) !important;
     border-radius: 10px;
@@ -789,12 +780,8 @@ a {
         width: 42px;
         height: 42px;
         line-height: 42px;
-
   
     }
-    
- 
- 
     ul li p {
         font-size: 1rem;
         line-height: 1.4rem;

@@ -52,7 +52,23 @@ var arrLang = {
     'proyect_lineup_p_2':'Requests: The Requests library was used to make HTTP requests, allowing us to interact with the web infrastructure effectively and retrieve essential data for evaluation.',
     'proyect_lineup_p_3':'cv2 (OpenCV): The cv2 library from OpenCV was incorporated for image processing. This component proved crucial for visually analyzing and manipulating extracted data.',
     'proyect_lineup_p_4':'io, BytesIO, and tempfile: These libraries, specifically io and BytesIO, were essential for working with data in memory and facilitating efficient byte manipulation. tempfile was also implemented to securely manage temporary files during the process.',
-    'proyect_lineup_p_5':'It is crucial to emphasize that web scraping, particularly for sites associated with paid services, should be conducted ethically and in compliance with the terms of service of the target website. Due to the aforementioned reasons, the project repository will not be made public.'
+    'proyect_lineup_p_5':'It is crucial to emphasize that web scraping, particularly for sites associated with paid services, should be conducted ethically and in compliance with the terms of service of the target website. Due to the aforementioned reasons, the project repository will not be made public.',
+    "proyect_easybuyai_p_1": "This project focused on developing a Product Comparison platform using Artificial Intelligence (AI). The main goal was to facilitate decision-making between products when making a purchase, also allowing to obtain the recommended product using the Amazon API.",
+    "proyect_easybuyai_p_2": "The project was implemented using the Python programming language, leveraging the versatility of the 'requests' library, the Flask framework to build the backend API, and Bootstrap for the frontend. Additionally, ChatGPT was used for AI recommendations in conjunction with a RapidAPI.com API for Amazon products.",
+    "proyect_easybuyai_p_3": "Finally, some controls were also integrated such as Anticaptcha to prevent Bots and CSRFToken to ensure that the tool is consumed from the frontend.",
+    "proyect_easybuyai_p_4_1": "Compare among N number of Products",
+    "proyect_easybuyai_p_4_2": "Get Amazon Products",
+    "proyect_easybuyai_p_5": "The Github repository is private since the project is currently functional and in constant development.",
+    "footer_p_1": "Here, I have gathered a collection of my projects in the development world.",
+    "footer_p_2": "If any of the projects have caught your interest, feel free to get in touch with me.",
+    "footer_p_3": "Thank you for visiting my portfolio. See you soon!",
+    "footer_titulo_1": "Products",
+    "footer_titulo_2": "Useful Links",
+    "contact": "Contact",
+    'copiar':'Copy',
+    'copiar_respuesta':'Copied.'
+
+    
   },  
   'ES':{
     'titulo':'Tecnólogo en Telecomunicaciones',
@@ -107,7 +123,27 @@ var arrLang = {
     'proyect_lineup_p_2':'Requests: Se utilizó la librería Requests para realizar solicitudes HTTP, permitiéndonos interactuar con la infraestructura web de manera efectiva y recuperar datos esenciales para la evaluación.',
     'proyect_lineup_p_3':'cv2 (OpenCV): La librería cv2 de OpenCV se incorporó para el procesamiento de imágenes. Este componente resultó crucial para analizar y manipular visualmente datos extraídos.',
     'proyect_lineup_p_4':'io, BytesIO y tempfile: Estas librerías, específicamente io y BytesIO, fueron esenciales para trabajar con datos en memoria y facilitar la manipulación eficiente de bytes. tempfile también se implementó para gestionar archivos temporales de manera segura durante el proceso.',
-    'proyect_lineup_p_5':'Es crucial destacar que el web scraping, especialmente en sitios vinculados con servicios pagos, debe llevarse a cabo de manera ética y cumpliendo con los términos de servicio del sitio web objetivo. Debido a las razones mencionadas anteriormente, el repositorio del proyecto no será hecho público.'
+    'proyect_lineup_p_5':'Es crucial destacar que el web scraping, especialmente en sitios vinculados con servicios pagos, debe llevarse a cabo de manera ética y cumpliendo con los términos de servicio del sitio web objetivo. Debido a las razones mencionadas anteriormente, el repositorio del proyecto no será hecho público.',
+    'proyect_easybuyai_p_1':'Este proyecto se enfocó en el desarrollo de una plataforma de comparación de Productos utilizando Inteligencia Artificial (IA). La meta principal fue facilitar la decisión entre productos a la hora de hacer una compra, además permitiendo obtener el producto recomendado utilizando la API de Amazon.',
+    'proyect_easybuyai_p_2':'El proyecto se implementó utilizando el lenguaje de programación Python, aprovechando la versatilidad de la biblioteca "requests", el Framework de Flask para construir la API en el backend y bootstrap para el frontend. Además se utilizó ChatGPT para la recomendación de IA en conjunto de una API de RapidAPI.com para los productos de Amazon.',
+    'proyect_easybuyai_p_3':'Por último también se integró algunos controles como Anticaptcha para evitar Bots y CSRFToken para que la herramienta sea consumida desde el frontend.',
+    'proyect_easybuyai_p_4_1':'Comparar entre N cantidad de Productos',
+    'proyect_easybuyai_p_4_2':'Obtener Productos de Amazon',
+    'proyect_easybuyai_p_5':'El repositorio de Github es privado ya que el proyecto actualmente esta funcional y en constante desarrollo.',
+    'footer_p_1':'Aquí, he reunido una colección de mis proyectos en el mundo del desarrollo.',
+    'footer_p_2':'Si te ha interesado alguno de los proyectos no dudes en ponerte en contacto conmigo.',
+    'footer_p_3':'Gracias por visitar mi portfolio. ¡Hasta pronto!',
+    'footer_titulo_1':'Productos',
+    'footer_titulo_2':'Links utiles',
+    'contact':'Contacto',
+    'copiar':'Copiar',
+    'copiar_respuesta':'Copiado.'
+
+
+
+
+
+
 
   }
 }

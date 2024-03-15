@@ -69,7 +69,7 @@
 
     </section>
 
-
+    <!-- Sección de About Me -->
     <section class="milogo" id="milogo">
         <div class="main">
             <div class="d-flex justify-content-center">
@@ -100,8 +100,8 @@
                     </div>
                     <div class="email-container">
                         <input type="text" class="email" value="emanavarrex1@hotmail.com" readonly>
-                        <button class="copy-btn">Copiar</button>
-                        <div class="copy-success">Copiado.</div>
+                        <button class="copy-btn translate-text" data-key="copiar">Copiar</button>
+                        <div class="copy-success translate-text" data-key="copiar_respuesta">Copiado.</div>
                     </div>
                 </div>  
 
@@ -296,6 +296,9 @@
         </div>    
     </section>      
 
+
+
+
     <!-- Sección de Proyectos -->
     <section id="proyectos">
         <div class="main">
@@ -303,7 +306,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
-                        <div class="card" data-toggle="modal" data-target="#brouProject" id="card_proyectos">
+                        <div class="card" data-toggle="modal" data-target="#easybuyaiProject" id="card_proyectos">
                             <div class="card-image">
                                 <img src="./imagenes/logo.png" alt="Imagen de la tarjeta" class="img-fluid">
                             </div>
@@ -328,19 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6">
-                        <div class="card" data-toggle="modal" data-target="#zabbixProject" id="card_proyectos">
-                            <div class="card-image">
-                                <img src="./imagenes/zabbix.png" alt="Imagen de la tarjeta" class="img-fluid">
-                            </div>
-                            <div class="card-details translate-text" data-key="proyect_zabbix_p_1">
-                                <p>Proyecto realizado con el objetivo de automatizar la creacion de hosts, items y triggers. Permite adaptarse a diversos escenarios mediante pequeñas modificaciones en el código. La automatización de estos procesos agiliza y simplifica tareas recurrentes, ofreciendo un marco flexible que puede ser ajustado para satisfacer las necesidades específicas.</p>
-                            </div>
-                            <div class="overlay">
-                                <p class="translate-text" data-key="more_details">Clickea para más detalles</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-12 col-lg-6">
                         <div class="card" data-toggle="modal" data-target="#flaskProject" id="card_proyectos">
                             <div class="card-image">
@@ -368,77 +359,129 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="card" data-toggle="modal" data-target="#zabbixProject" id="card_proyectos">
+                            <div class="card-image">
+                                <img src="./imagenes/zabbix.png" alt="Imagen de la tarjeta" class="img-fluid">
+                            </div>
+                            <div class="card-details translate-text" data-key="proyect_zabbix_p_1">
+                                <p>Proyecto realizado con el objetivo de automatizar la creacion de hosts, items y triggers. Permite adaptarse a diversos escenarios mediante pequeñas modificaciones en el código. La automatización de estos procesos agiliza y simplifica tareas recurrentes, ofreciendo un marco flexible que puede ser ajustado para satisfacer las necesidades específicas.</p>
+                            </div>
+                            <div class="overlay">
+                                <p class="translate-text" data-key="more_details">Clickea para más detalles</p>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 
             </div>
-            <!-- Bootstrap Modal -->
-            <div class="modal fade" id="brouProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Aquí puedes agregar más información -->
-                            <h5 class="modal-title translate-text" data-key="proyect_h_1">Objetivo:</h5>
-                            <p class="translate-text" data-key="proyect_brou_p_1">Este proyecto se enfocó en el desarrollo de un scraping para obtener información detallada de las cuentas bancarias desde la página web del BROU. La meta principal fue facilitar el acceso a la información financiera personal, permitiendo la automatización de consultas de saldos y la ejecución de transacciones.</p>
-                            <h5 class="modal-title translate-text" data-key="proyect_h_2">Herramientas Utilizadas:</h5>
+        </div>
 
-                            <p class="translate-text" data-key="proyect_brou_p_2">El proyecto se implementó utilizando el lenguaje de programación Python, aprovechando la versatilidad de la biblioteca 'requests'. La elección de Python y esta biblioteca específica permitió realizar solicitudes HTTP de manera eficiente y gestionar las respuestas de la página web del BROU de manera estructurada.</p>
-                            
-                            <h5 class="modal-title translate-text" data-key="proyect_h_3">Funcionalidades Implementadas:</h5>
-                            <p class="translate-text" data-key="proyect_brou_p_3_1">Acceso a la Información Bancaria</p>
-                            <p class="translate-text" data-key="proyect_brou_p_3_2">Automatización de Transferencias</p>
-                            <h5 class="modal-title translate-text" data-key="proyect_h_4">Consideraciones Éticas y de Seguridad:</h5>
-                            <p class="translate-text" data-key="proyect_brou_p_4">Es fundamental destacar que el scraping de sitios web, especialmente aquellos relacionados con información financiera, debe llevarse a cabo de manera ética y respetando los términos de servicio del sitio web objetivo. Por lo anteriormente descripto no se publicará el repositorio del proyecto.</p>
-                            <h5 class="modal-title">Web:</h5>
 
-                            <div class="buttons">
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="easybuyaiProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Aquí puedes agregar más información -->
+                        <h5 class="modal-title translate-text" data-key="proyect_h_1">Objetivo:</h5>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_1">Este proyecto se enfocó en el desarrollo de una plataforma de comparación de Productos utilizando Inteligencia Artificial (IA). La meta principal fue facilitar la decisión entre productos a la hora de hacer una compra, además permitiendo obtener el producto recomendado utilizando la API de Amazon.</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_2">Herramientas Utilizadas:</h5>
 
-                                <a href="https://ebanking.brou.com.uy/frontend/" class="fa fa-globe"></a>
-    
-                            </div>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_2">El proyecto se implementó utilizando el lenguaje de programación Python, aprovechando la versatilidad de la biblioteca 'requests', el Framework de Flask para construir la API en el backend y bootstrap para el frontend. Además se utilizó ChatGPT para la recomendación de IA en conjunto de una API de RapidAPI.com para los productos de Amazon.</p>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_3">Por último también se integró algunos controles como Anticaptcha para evitar Bots y CSRFToken para que la herramienta sea consumida desde el frontend.</p>
+                        
+                        <h5 class="modal-title translate-text" data-key="proyect_h_3">Funcionalidades Implementadas:</h5>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_4_1">Comparar entre N cantidad de Productos</p>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_4_2">Obtener Productos de Amazon</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_5">Repositorio:</h5>
+                        <p class="translate-text" data-key="proyect_easybuyai_p_5">El repositorio de Github es privado ya que el proyecto actualmente esta funcional y en constante desarrollo.</p>
+                        <h5 class="modal-title">Web:</h5>
+
+                        <div class="buttons">
+
+                            <a href="https://www.easybuyai.com/" class="fa fa-globe"></a>
+
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary translate-text" data-key="close" data-dismiss="modal">Cerrar</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary translate-text" data-key="close" data-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="zabbixProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Aquí puedes agregar más información -->
-                            <h5 class="modal-title translate-text" data-key="proyect_h_1">Objetivo:</h5>
-                            <p class="translate-text" data-key="proyect_zabbix_p_1">Este proyecto se realizó con el objetivo de automatizar la creacion de hosts, items y triggers. Permite adaptarse a diversos escenarios mediante pequeñas modificaciones en el código. La automatización de estos procesos agiliza y simplifica tareas recurrentes, ofreciendo un marco flexible que puede ser ajustado para satisfacer las necesidades específicas.</p>
-                            <h5 class="modal-title translate-text" data-key="proyect_h_2">Herramientas Utilizadas:</h5>
+        </div>
+        <div class="modal fade" id="brouProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Aquí puedes agregar más información -->
+                        <h5 class="modal-title translate-text" data-key="proyect_h_1">Objetivo:</h5>
+                        <p class="translate-text" data-key="proyect_brou_p_1">Este proyecto se enfocó en el desarrollo de un scraping para obtener información detallada de las cuentas bancarias desde la página web del BROU. La meta principal fue facilitar el acceso a la información financiera personal, permitiendo la automatización de consultas de saldos y la ejecución de transacciones.</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_2">Herramientas Utilizadas:</h5>
 
-                            <p class="translate-text" data-key="proyect_zabbix_p_2">Se desarrolló utilizando Python como lenguaje de programación, aprovechando la API de Zabbix y la biblioteca requests. Python ofrece versatilidad y legibilidad, mientras que la API de Zabbix facilita la interacción con el sistema de monitoreo. La biblioteca requests simplifica las solicitudes HTTP, permitiendo la automatización eficiente de tareas.</p>
-                            
-                            <h5 class="modal-title translate-text" data-key="proyect_h_3">Funcionalidades Implementadas:</h5>
-                            <p class="translate-text" data-key="proyect_zabbix_p_3_1">Creación de Hosts, Items y Triggers: Simplifica y agiliza la configuración de elementos esenciales en Zabbix.</p>
-                            <p class="translate-text" data-key="proyect_zabbix_p_3_2">Adaptabilidad: Permite ajustes específicos para adecuarse a distintos contextos y necesidades.</p>
-                            <h5 class="modal-title translate-text" data-key="proyect_h_5">Repositorio:</h5>
-                            <div class="buttons">
+                        <p class="translate-text" data-key="proyect_brou_p_2">El proyecto se implementó utilizando el lenguaje de programación Python, aprovechando la versatilidad de la biblioteca 'requests'. La elección de Python y esta biblioteca específica permitió realizar solicitudes HTTP de manera eficiente y gestionar las respuestas de la página web del BROU de manera estructurada.</p>
+                        
+                        <h5 class="modal-title translate-text" data-key="proyect_h_3">Funcionalidades Implementadas:</h5>
+                        <p class="translate-text" data-key="proyect_brou_p_3_1">Acceso a la Información Bancaria</p>
+                        <p class="translate-text" data-key="proyect_brou_p_3_2">Automatización de Transferencias</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_4">Consideraciones Éticas y de Seguridad:</h5>
+                        <p class="translate-text" data-key="proyect_brou_p_4">Es fundamental destacar que el scraping de sitios web, especialmente aquellos relacionados con información financiera, debe llevarse a cabo de manera ética y respetando los términos de servicio del sitio web objetivo. Por lo anteriormente descripto no se publicará el repositorio del proyecto.</p>
+                        <h5 class="modal-title">Web:</h5>
 
-                                <a href="https://github.com/enavarro1723/zabbix_project" class="fa fa-github"></a>
+                        <div class="buttons">
 
-                            </div>
+                            <a href="https://ebanking.brou.com.uy/frontend/" class="fa fa-globe"></a>
+
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary translate-text" data-key="close" data-dismiss="modal">Cerrar</button>    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary translate-text" data-key="close" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="zabbixProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Más información</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Aquí puedes agregar más información -->
+                        <h5 class="modal-title translate-text" data-key="proyect_h_1">Objetivo:</h5>
+                        <p class="translate-text" data-key="proyect_zabbix_p_1">Este proyecto se realizó con el objetivo de automatizar la creacion de hosts, items y triggers. Permite adaptarse a diversos escenarios mediante pequeñas modificaciones en el código. La automatización de estos procesos agiliza y simplifica tareas recurrentes, ofreciendo un marco flexible que puede ser ajustado para satisfacer las necesidades específicas.</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_2">Herramientas Utilizadas:</h5>
+
+                        <p class="translate-text" data-key="proyect_zabbix_p_2">Se desarrolló utilizando Python como lenguaje de programación, aprovechando la API de Zabbix y la biblioteca requests. Python ofrece versatilidad y legibilidad, mientras que la API de Zabbix facilita la interacción con el sistema de monitoreo. La biblioteca requests simplifica las solicitudes HTTP, permitiendo la automatización eficiente de tareas.</p>
+                        
+                        <h5 class="modal-title translate-text" data-key="proyect_h_3">Funcionalidades Implementadas:</h5>
+                        <p class="translate-text" data-key="proyect_zabbix_p_3_1">Creación de Hosts, Items y Triggers: Simplifica y agiliza la configuración de elementos esenciales en Zabbix.</p>
+                        <p class="translate-text" data-key="proyect_zabbix_p_3_2">Adaptabilidad: Permite ajustes específicos para adecuarse a distintos contextos y necesidades.</p>
+                        <h5 class="modal-title translate-text" data-key="proyect_h_5">Repositorio:</h5>
+                        <div class="buttons">
+
+                            <a href="https://github.com/enavarro1723/zabbix_project" class="fa fa-github"></a>
+
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary translate-text" data-key="close" data-dismiss="modal">Cerrar</button>    
                     </div>
                 </div>
             </div>
@@ -570,6 +613,107 @@
             </div>
         </div>
     </section>   -->
+     <!-- Footer -->
+
+     <div class="container-fluid p-0">
+
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+
+
+            <!-- Section: Links  -->
+            <section class="" id="footer" style="background-color: #1c2331"> 
+                <div class="container text-center text-md-start pt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">Portfolio</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 100%; background-color: #7c4dff; height: 2px"
+                            />
+                        <p class="translate-text" data-key="footer_p_1">
+                            Aquí, he reunido una colección de mis proyectos en el mundo del desarrollo.
+                        </p>
+                        <p class="translate-text" data-key="footer_p_2">
+
+                            Si te ha interesado alguno de los proyectos no dudes en ponerte en contacto conmigo.
+                        </p>
+                        <p class="translate-text" data-key="footer_p_3">
+
+                            Gracias por visitar mi portfolio. ¡Hasta pronto!
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold translate-text" data-key="footer_titulo_1">Productos</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 100%; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                        <a href="https://www.easybuyai.com/" class="text-white">EasyBuyAI</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold translate-text" data-key="footer_titulo_2">Links utiles</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 100%; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                        <a href="https://www.instagram.com/emanuel.navarro3/" class="text-white">Instagram</a>
+                        </p>
+                        <p>
+                        <a href="https://www.linkedin.com/in/emanuelnavarrocoronel" class="text-white">LinkedIn</a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/enavarro1723" class="text-white">GitHub</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold translate-text" data-key="contact">Contacto</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 100%; background-color: #7c4dff; height: 2px"
+                            />
+                        <p><i class="bi bi-geo-alt-fill"></i> Castillos, Rocha, Uruguay</p>
+                        <p><i class="bi bi-envelope-fill"></i> emanavarrex1@hotmail.com</p>
+                    </div>
+                    <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+            © 2024 Copyright:
+            <a class="text-white" href="https://enavarro.dev"
+                >enavarro.dev</a
+                >
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
  </body>
 
 

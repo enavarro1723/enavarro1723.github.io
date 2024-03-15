@@ -376,7 +376,7 @@ ul li a  {
 }
 
 #modeIcon{
-    color:#87CEEB;
+    color:var(--color-title1);
     background-color: #FFFFFF;
 
 

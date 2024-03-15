@@ -371,7 +371,10 @@ ul li a  {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
 }
-
+#modeIcon{
+    background-color: var(--color-background);
+    color:var(--color-title1);
+}
 .card {
     border: 1px solid var(--color-title1) !important;
     border-radius: 10px;

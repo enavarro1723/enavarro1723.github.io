@@ -33,6 +33,7 @@ body {
 .navbar-brand{
     font-family: 'Pacifico', cursive;
     color: var(--color-text-accent1);
+    padding-left: 30px;
 }
 
 .navbar-toggler-icon {
@@ -328,7 +329,10 @@ ul li:nth-child(odd) .date {
     clear: left;
     transform: translateX(30px);
 }
-
+.heading{
+    color:var(--color-accent1);
+    text-decoration: none;
+ }
 ul li .heading {
     font-size: 2rem;
     color: var(--color-accent1);
@@ -695,8 +699,12 @@ a {
         padding: 15px 20px;
    
     }
+ 
+    
     ul li .heading {
         font-size: 1rem;
+
+        
     }
     ul li .date {
         width: 130px;

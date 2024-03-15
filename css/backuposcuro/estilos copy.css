@@ -1,4 +1,8 @@
+
+
+
 /* Estilos generales */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,6 +10,7 @@ body {
 }
 
 /* Estilos del Navbar */
+
 .navbar {
     background-color: #2c3e50; /* Color de fondo */
     padding: 10px 20px;
@@ -40,10 +45,13 @@ body {
     color: #3498db; /* Cambio de color al pasar el mouse */
 }
 
+
 /* Estilos para los botones de idioma */
+
 .language-buttons {
     display: flex;
     align-items: center;
+	
 }
 
 .translate {
@@ -51,7 +59,9 @@ body {
     border: none;
     cursor: pointer;
     margin-left: 15px;
-    transition: transform 0.3s ease; /* Efecto de escala al pasar el mouse */
+	transition: transform 0.3s ease; /* Efecto de escala al pasar el mouse */
+	height: 30px;
+	width: 30px;
 }
 
 .translate:hover {
@@ -62,20 +72,13 @@ body {
 /* Estilos para las secciones */
 section {
     background-color: #f8f9fa;
+	text-align: center;
+
 }
 
-/* Estilos para el botón de descarga */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
 
 /* Estilos para la Foto */
+
 header .logo{
 	margin: 0;
 	padding: 25px 30px;
@@ -85,7 +88,6 @@ header .logo{
   }
   header{
 	display: inline-block;
-  
 	text-align: center;
 	background-color: rgb(245,245,245);
 	z-index: 4;
@@ -108,8 +110,8 @@ header .logo{
 	flex-direction: column;
 	margin: 20px 0 0 0;
 	position: relative;
-	width: 325px;
-	height: 325px;
+	width: 350px;
+	height: 350px;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
 	overflow: hidden;
@@ -176,9 +178,9 @@ header .logo{
 
 
 /* Estilos para el Timeline */
+
 * {
 	text-decoration: none; /* Quitar subrayado */
-
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -196,35 +198,18 @@ header .logo{
 	background-color: rgb(245, 245, 245);
 	padding: 50px 0;
 }
+
+ 
 .main .head {
-	font-size: 29px;
-	color: rgba(91, 14, 216, 0.767);
-	position: relative;
-	margin-bottom: 100px;
-	font-weight: 500;
-}
-
-
-.main .head::after {
-	content: " ";
-	position: absolute;
-	width: 50%;
-	height: 3px;
-	left: 50%;
-	bottom: -5px;
-	transform: translateX(-50%);
-	background-image: linear-gradient(to right, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
-}
-
-.main .headcard {
-	font-size: 29px;
 	color: rgba(91, 14, 216, 0.767);
 	position: relative;
 	margin-bottom: 30px;
 	font-weight: 500;
+	font-size: 45px;
+	margin-top: 20px;
 
-}
-.main .headcard::after {
+} 
+.main .head::after {
 
 	content: " ";
 	position: absolute;
@@ -234,7 +219,7 @@ header .logo{
 	bottom: -5px;
 	transform: translateX(-50%);
 	background-image: linear-gradient(to right, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
-}
+} 
 
 /* Container Css Start  */
 
@@ -243,8 +228,6 @@ header .logo{
 	height: auto;
 	margin: auto 0;
 	position: relative;
-	
-		
 
 }
 .container ul {
@@ -270,7 +253,11 @@ header .logo{
 	position: relative;
 	margin-bottom: 30px;
 	z-index: 99;
+	
+
 }
+
+
 .container ul li:nth-child(4) {
 	margin-bottom: 0;
 }
@@ -347,13 +334,13 @@ ul li a {
 
 
 
-@media only screen and (min-width:798px) and (max-width: 1100px) {
+@media only screen and (width>=798px) and (width<1100px) {
 	.container{
 		width: 80%;
 	}
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (width<798px) {
 	.container{
 		width: 70%;
 		transform: translateX(20px);
@@ -383,7 +370,7 @@ ul li a {
 	}
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (width< 550px) {
 	.container{
 		width: 80%;
 	}
@@ -411,12 +398,6 @@ ul li a {
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 	transition: all .4s ease-in-out;
   }
-  section {
-	text-align: center;
-	
-  }
-
-
 
 .card {
 	border: 1px solid #f1f1f1; /* Borde del contorno */
@@ -426,7 +407,7 @@ ul li a {
 	margin-bottom: 20px; /* Espaciado inferior entre las tarjetas */
 	height: 95%; /* Establecer altura fija para todas las cartas en una fila */
 	margin:10px;
-	
+	transition: all 400ms;	
 
 }
 
@@ -466,15 +447,15 @@ ul li a {
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease;
+
+
 }
 
 .card:hover .overlay {
     opacity: 1;
 }
 
-.card a{
-	text-decoration: none;
-}
+
 
 
 /* Estilos adicionales para cambiar la apariencia del enlace al pasar el mouse */
@@ -485,7 +466,7 @@ a:hover {
 	
 /* Copiado del boton del correo */
 
-#email-container {
+.email-container {
     display: flex;
     align-items: center;
     background-color: #f1f1f1;
@@ -500,14 +481,14 @@ a:hover {
     }
 }
 
-#email {
+.email {
     flex: 1;
     border: none;
     padding: 8px;
     font-size: 16px;
 }
 
-#copy-btn {
+.copy-btn {
     cursor: pointer;
     padding: 8px;
     background-color: #4CAF50;
@@ -517,7 +498,7 @@ a:hover {
     margin-left: 10px;
 }
 
-#copy-success {
+.copy-success {
     margin-left: 10px;
     color: #4CAF50;
     font-size: 14px;
@@ -581,6 +562,7 @@ a:hover {
 }
 
 /* Estilos del carrusel y tarjetas */
+
 #card-carousel {
 	margin: auto; /* Centrar el carrusel en la pantalla */
   }

@@ -116,7 +116,7 @@ var arrLang = {
   
 $(function () {
   $('.translate').click(function () {
-    var lang = $(this).attr('value');
+    var lang = $(this).data('lang'); // Recoger el idioma del atributo data-lang
 
     // Añadir o quitar la clase 'active' para resaltar el idioma seleccionado
     $('.translate').removeClass('active');

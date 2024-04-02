@@ -71,6 +71,7 @@ body {
 
 .language-buttons {
     display: flex; /* Nuevo */
+
 }
 
 .translate {
@@ -812,7 +813,7 @@ a {
   
     .card#card_proyectos {
         
-        height:550px;
+        height:650px;
     }
     .language-buttons {
         display: block;

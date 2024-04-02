@@ -585,7 +585,7 @@ ul li a  {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .img_size{

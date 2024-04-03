@@ -408,6 +408,8 @@ ul li a  {
 .card-details {
     padding: 15px;
     height: 40%;
+    text-align: justify;
+
 }
 
 .card-details h2 {
@@ -514,6 +516,7 @@ ul li a  {
 
 .modal-body p {
     line-height: 1.6;
+    
 }
 
 /* Estilo para la imagen en el modal */

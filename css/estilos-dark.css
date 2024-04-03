@@ -406,6 +406,8 @@ ul li a  {
 .card-details {
     padding: 15px;
     height: 40%;
+    text-align: justify;
+
 }
 
 .card-details h2 {
@@ -811,7 +813,7 @@ a {
   
     .card#card_proyectos {
         
-        height:550px;
+        height:650px;
     }
     .language-buttons {
         display: block;

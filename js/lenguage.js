@@ -4,7 +4,7 @@ var arrLang = {
     'about':' About me',
     'education':' Education',
     'experience':' Experience',
-    'proyects': 'Proyects',
+    'proyects': 'Projects',
     'interests': ' Interests',
     'p1_about':'Uruguayan from the departmento of Rocha where I studied Telecommunications Technology at CURE (Centro Universitario Regional del Este).',
     'p2_about':'I am currently working at Prometeo Openbanking, studying in parallel in a self-taught way in the world of development, exploring new challenges and technologies.',

@@ -387,6 +387,7 @@ ul li a  {
     overflow: hidden; /* Evitar que el contenido sobresalga */
     height:auto;
     background-color: var(--color-cards1) !important;
+    cursor: pointer;
 
     transition: transform 400ms, box-shadow 400ms;
 }

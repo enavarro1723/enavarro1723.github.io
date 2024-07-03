@@ -9,7 +9,10 @@
 
 }
 
-/* Estilos generales */
+p {
+    color:var(--color-text1);
+
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -33,7 +36,11 @@ body {
     justify-content: space-between; /* Nuevo */
     align-items: center; /* Nuevo */
 }
+/* Estilos generales */
+.h6, h6 {
+    color:white;
 
+}   
 .navbar-brand{
     font-family: 'Pacifico', cursive;
     color: var(--color-title1);
@@ -267,6 +274,8 @@ header {
     position: relative;
     margin-bottom: 30px;
     z-index: 99;
+ 
+    border: 1px solid var(--color-title1) !important;
 }
 
 .container ul li:nth-child(4) {
@@ -348,6 +357,7 @@ ul li p {
     color: var(--color-text1);
     line-height: 2rem;
     margin: 6px 0 4px 0;
+    
 }
 
 ul li a  {
@@ -461,6 +471,10 @@ ul li a  {
     font-size: 1.5rem; 
     background-color: var(--color-cards1);
 
+    color:var(--color-text1);
+
+
+
 }
 
 .copy-btn {
@@ -504,6 +518,13 @@ ul li a  {
     border-top: 1px solid #dee2e6;
 }
 
+footer p{
+    color:#fff;
+}
+
+footer h6{
+    color:#fff;
+}
 /* Estilos para el botón de cerrar */
 .close {
     color: white;
@@ -517,6 +538,8 @@ ul li a  {
 
 .modal-body p {
     line-height: 1.6;
+    color: black;
+
     
 }
 

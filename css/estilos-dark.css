@@ -1,13 +1,21 @@
 /* Paleta de colores */
 :root {
-    --color-background: rgb(163 163 163);
-    --color-text1:black;
-    --color-title1: #555555;
-    --color-botones1: #333333;
-    --color-cards1: #BBBBBB;
+    --color-background: #090B0B;  /* Invertido de #F6F4F4 */
+    --color-text1: white;  /* Invertido de black */
+    --color-title1: #516F8A;  /* Invertido de #AE9075 */
+    --color-botones1: #C3C9CB;  /* Invertido de #3C3634 */
+    --color-cards1: #000000;  /* Invertido de #fff */
 }
 
 
+p {
+    color:var(--color-text1);
+
+}
+.h6, h6 {
+    color:var(--color-text1) !important;
+
+}   
 /* Estilos generales */
 
 body {
@@ -20,9 +28,7 @@ body {
     flex-direction: column; /* Nuevo */
     min-height: 100vh; /* Nuevo */
 }
-.p{
-    color:var(--color-text1);
-}
+
 /* Estilos del Navbar */
 .navbar {
     background-color: var(--color-botones1);
@@ -265,6 +271,8 @@ header {
     position: relative;
     margin-bottom: 30px;
     z-index: 99;
+    border: 1px solid var(--color-title1) !important;
+
 }
 
 .container ul li:nth-child(4) {
@@ -457,6 +465,8 @@ ul li a  {
     padding: 8px;
     font-size: 1.5rem; 
     background-color: var(--color-cards1);
+    color:var(--color-text1);
+
 
 }
 
@@ -514,6 +524,7 @@ ul li a  {
 
 .modal-body p {
     line-height: 1.6;
+    color: black;
 }
 
 /* Estilo para la imagen en el modal */

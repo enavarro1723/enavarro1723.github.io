@@ -7,6 +7,15 @@ function toggleMode() {
      // Cambia el ícono
      const modeIcon = document.getElementById("modeIcon");
      modeIcon.className = newMode === "light" ? "fa fa-sun-o" : "fa fa-moon-o";
+    // Cambia las imágenes
+    const images = document.querySelectorAll("img");
+    images.forEach(img => {
+        if (newMode === "dark" && img.src.includes("_light")) {
+            img.src = img.src.replace("_light", "_dark");
+        } else if (newMode === "light" && img.src.includes("_dark")) {
+            img.src = img.src.replace("_dark", "_light");
+        }
+    });
 }
 
 // Detecta el modo del sistema y establece el tema inicial

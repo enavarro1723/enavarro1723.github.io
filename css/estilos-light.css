@@ -420,6 +420,8 @@ ul li a  {
     padding: 15px;
     height: 40%;
     text-align: justify;
+    color: var(--color-text1);
+
 
 }
 

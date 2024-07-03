@@ -16,6 +16,10 @@ p {
     color:var(--color-text1) !important;
 
 }   
+.h4, h4 {
+    color:var(--color-text1) !important;
+
+}   
 /* Estilos generales */
 
 body {
@@ -415,7 +419,7 @@ ul li a  {
     padding: 15px;
     height: 40%;
     text-align: justify;
-
+    color: var(--color-text1);
 }
 
 .card-details h2 {

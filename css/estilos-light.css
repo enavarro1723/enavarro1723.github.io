@@ -624,6 +624,51 @@ a {
     height: 40px
 }
 
+/* Estilos para las flechas personalizadas */
+.custom-carousel-control {
+    width: 50px !important;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%  !important;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.custom-carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.custom-prev-icon,
+.custom-next-icon {
+    border: solid var(--color-botones1);
+    border-width: 0 4px 4px 0;
+    padding: 10px;
+}
+
+.custom-prev-icon {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.custom-next-icon {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.carousel-control-prev.custom-carousel-control {
+    left: -60px; /* Posición fuera del contenedor */
+}
+
+.carousel-control-next.custom-carousel-control {
+    right: -60px; /* Posición fuera del contenedor */
+}
 /* ¡Pantallas medianas! */
 @media (min-width: 993px) and (max-width: 1200px) {
 
@@ -848,5 +893,11 @@ a {
         display: block;
     }
     
-  
+    .carousel-control-prev.custom-carousel-control {
+        left: 10px; /* Asegura que las flechas estén visibles en móviles */
+    }
+
+    .carousel-control-next.custom-carousel-control {
+        right: 10px; /* Asegura que las flechas estén visibles en móviles */
+    }
 }

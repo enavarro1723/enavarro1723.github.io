@@ -655,6 +655,11 @@ a {
     right: -60px; /* Posición fuera del contenedor */
 }
 
+.overlay .translate-text{
+    color: #ffffff;
+
+}
+
 /* ¡Pantallas medianas! */
 @media (min-width: 993px) and (max-width: 1200px) {
 
